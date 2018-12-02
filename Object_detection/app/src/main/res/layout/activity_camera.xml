@@ -6,14 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".CameraActivity">
 
-    <ImageView
-        android:id="@+id/imgView_logo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="127dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_tensorflow_logo" />
+    <!--<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/capturedImage"
+        />-->
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        android:text="Click" />
+    <TextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/click"/>
+
+
+
 </RelativeLayout>
